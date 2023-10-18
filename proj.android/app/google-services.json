@@ -1,0 +1,65 @@
+{
+  "project_info": {
+    "project_number": "800936339408",
+    "firebase_url": "https://api-project-800936339408.firebaseio.com",
+    "project_id": "api-project-800936339408",
+    "storage_bucket": "api-project-800936339408.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800936339408:android:f0ac6788df563610",
+        "android_client_info": {
+          "package_name": "com.maf.moneyhero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800936339408-49di7g6o6eeeeooobug2fb5hf59tjla9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maf.moneyhero",
+            "certificate_hash": "65fc18f3da6f1eddc7eebba8a2d4d3da0cb748ed"
+          }
+        },
+        {
+          "client_id": "800936339408-m36ire1qu1ls7oi0h6vvu10efd1c1hep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maf.moneyhero",
+            "certificate_hash": "b49f32bb3c6f493bbfb73fa7ff27a86f7a23e115"
+          }
+        },
+        {
+          "client_id": "800936339408-q1p63qccf0sbkbcvqsk1evpqjjrs1ird.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2g6jZ5-XiUyhlgfgDYDCtHHwwECyDBpU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800936339408-cq699o9qs5mdci8peh4m3b4u6rqhj1he.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "800936339408-oqlnjvp62cskub55g3njja8969a2rlmt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.maf.moneyhero",
+                "app_store_id": "987072755"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-9587898460919430~8414216501"
+    }
+  ],
+  "configuration_version": "1"
+}

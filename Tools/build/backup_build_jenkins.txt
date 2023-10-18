@@ -1,0 +1,78 @@
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT=/Users/maf/Library/Cocos2D-X/cocos2d-x-3.13.1/tools/cocos2d-console/bin
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_X_ROOT for cocos2d-x
+export COCOS_X_ROOT=/
+export PATH=$COCOS_X_ROOT:$PATH
+
+# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+export COCOS_TEMPLATES_ROOT=/Users/maf/Library/Cocos2D-X/cocos2d-x-3.13.1/templates
+export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+# Add environment variable NDK_ROOT for cocos2d-x
+export NDK_ROOT=/Users/maf/Library/Android/sdk/android-ndk-r12b
+export PATH=$NDK_ROOT:$PATH
+
+# Add environment variable ANDROID_SDK_ROOT for cocos2d-x
+export ANDROID_SDK_ROOT=/Users/maf/Library/Android/sdk
+export PATH=$ANDROID_SDK_ROOT:$PATH
+export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
+
+# Add environment variable ANT_ROOT for cocos2d-x
+export ANT_ROOT=/usr/local/Cellar/ant/1.10.6/bin
+export PATH=$ANT_ROOT:$PATH
+
+cd /Users/maf/.jenkins/workspace/FantasyClicker_Android/proj.android-studio
+
+# Build Output apk
+if [ $TARGET = DEV ]
+then 
+	cocos compile -p android -android-studio -m debug
+elif [ $TARGET = REALESE ]
+then
+	cocos compile -p android -android-studio -m release
+    
+    # Output abb 
+    if [ $GOOGLE_UPLOAD = YES ]
+	then
+		./gradlew bundleRelease
+        ./gradlew crashlyticsUploadSymbolsRelease
+    fi
+fi
+
+# Build Output File Move
+if [ $TARGET = DEV ]
+then
+	# Move apk
+	cd /Users/maf/.jenkins/workspace/FantasyClicker_Android/bin/debug/android
+	mv FantasyClicker-debug.apk /Users/maf/Desktop/APK/FantasyClicker/FantasyClicker_Dev_"$BUILD_NUMBER".apk
+
+	# Copy Google Drive apk
+    if [ $GOOGLE_UPLOAD = YES ]
+	then
+		cd /Users/maf/Desktop/APK/FantasyClicker
+		cp FantasyClicker_Dev_"$BUILD_NUMBER".apk /Volumes/GoogleDrive/내\ 드라이브/0.\ mafgames/5.apk/김봉식
+	fi
+    
+elif [ $TARGET = REALESE ]
+then
+	
+    # Copy Google Drive apk, aab
+    if [ $GOOGLE_UPLOAD = YES ]
+	then
+        # Move abb
+	    cd /Users/maf/.jenkins/workspace/FantasyClicker_Android/proj.android-studio/app/build/outputs/bundle/release
+	    mv FantasyClicker.aab /Users/maf/Desktop/APK/FantasyClicker/FantasyClicker_Release_AAB_"$BUILD_NUMBER".aab
+    
+		cd /Users/maf/Desktop/APK/FantasyClicker
+        cp FantasyClicker_Release_AAB_"$BUILD_NUMBER".aab /Volumes/GoogleDrive/내\ 드라이브/0.mafgames/3.apk/김봉식
+    else
+        # Move apk
+	    cd /Users/maf/.jenkins/workspace/FantasyClicker_Android/bin/release/android
+	    mv FantasyClicker-release-signed.apk /Users/maf/Desktop/APK/FantasyClicker/FantasyClicker_Release_APK_"$BUILD_NUMBER".apk
+        
+        cd /Users/maf/Desktop/APK/FantasyClicker
+		cp FantasyClicker_Release_APK_"$BUILD_NUMBER".apk /Volumes/GoogleDrive/내\ 드라이브/0.mafgames/3.apk/김봉식
+	fi
+fi

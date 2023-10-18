@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">com.maf.iab</string>
+    <string name="facebook_app_id">508736982562213</string>  <!-- hexnake -->
+    <string name="tnk_id">type your id</string>
+    <string name="nas_id">type your id</string>
+    <string name="admob_id">type your id</string>
+
+    <string name="firebaseauth_webclientid">394630946847-g4u0d2or26h0plc7un6posleb8p8gnja.apps.googleusercontent.com</string>
+    
+    <string name="illegal_find">불법 프로그램 감지.</string>
+    <string name="illegal_text">데이터 및 속도를 조작하는 프로그램이 발견되었습니다.</string>
+    <string name="illegal_ok">확인</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+</resources>

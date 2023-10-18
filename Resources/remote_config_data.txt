@@ -1,0 +1,29 @@
+{  
+  "enable_interstitial": false,
+  "enable_banner": true,
+  "newbie_start_mission": 0,
+  "tutorial_hand_color": 2,
+  "user_agree_skip": true,
+  
+  "BONUS_1F_KEY":   2,
+  "BONUS_10F_KEY":  5,
+  "BONUS_100F_KEY": 10,
+  "BONUS_10F_GEM" : 3,
+  "BONUS_100F_GEM" : 20,
+  
+  "BUY_GOLD_GEM":     100,
+  "BUY_GOLD_GEM_BIG": 500,
+  "BUY_COIN_BONUS":   100,
+  "BUY_ATTACK_BONUS": 100,
+  "BUY_MOVE_BONUS":   250,
+  
+  "recommend_costume":   true,
+  
+  "enable_buff_recommend":   true,
+  "buff_recommend_count":   100,
+  "buff_recommend_floor":   1000,
+  "buff_recommend_time":   300,
+  
+  
+  "none" : 0
+}

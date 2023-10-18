@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <resources>
+   
+   
+     <string name="ga_logLevel">verbose</string>
+     <integer name="ga_dispatchPeriod">1800</integer>
+     <!-- <bool name="ga_dryRun">false</bool> -->
+ </resources>
+ 
+ <!--
+ Following is a complete list of globally scoped configuration values that can be specified:
+ga_appName(string) - name of application. Defaults to value found in the package.
+ga_appVersion(string) - version of application. Defaults to value found in the package.
+ga_logLevel(string) - One of "verbose", "info", "warning", "error".
+ga_dispatchPeriod(integer) - frequency of automatic dispatch (in seconds). Default is 1800.
+ga_dryRun(bool) - if true, enable dry run mode. Default is false.
+
+ 
+   -->

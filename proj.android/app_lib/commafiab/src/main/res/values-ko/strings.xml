@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="illegal_find">불법 프로그램 감지.</string>
+    <string name="illegal_text">데이터 및 속도를 조작하는 프로그램이 발견되었습니다.</string>
+    <string name="illegal_ok">확인</string>
+</resources>

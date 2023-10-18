@@ -1,0 +1,16 @@
+{
+  "ads": [
+    {
+      "_aos": "https://knightofdelivery.onelink.me/StrQ/bongsik",
+      "_img_aos": "Maf/ads/delivery_knight.png",
+      "_ios": "https://thechangers.onelink.me/uvfz/bong",
+      "_img_ios": "Maf/ads/thechangers_ios.png"
+    },
+    {
+      "_aos": "https://tilerpgglobal.page.link/n3UL",
+      "_img_aos": "Maf/ads/tilerpg_jp_aos.png",
+      "_ios": "https://tilerpgglobal.page.link/n3UL",
+      "_img_ios": "Maf/ads/tilerpg_jp_ios.png"
+    }
+  ]
+}

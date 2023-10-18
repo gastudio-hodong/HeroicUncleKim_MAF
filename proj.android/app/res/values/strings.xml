@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mr.Kim</string>
+    <string name="facebook_app_id">1054442607919851</string>
+    <string name="facebook_client_token">75650d7823efa5d265443e4034fe349d</string>
+    <string name="tnk_id">10501010-4011-449d-d944-11030e0e000c</string>
+    <string name="nas_id">988b528af8a6ba64ceaaad608c30c0fa</string>
+    <string name="admob_id">ca-app-pub-4854156306547538~9571707803</string>
+</resources>

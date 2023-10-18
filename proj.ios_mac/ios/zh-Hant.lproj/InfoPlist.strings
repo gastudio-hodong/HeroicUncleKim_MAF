@@ -1,0 +1,15 @@
+/* 
+  infoPlist.strings
+  FantasyClicker
+
+  Created by SanHeo on 2015. 4. 21..
+
+*/
+
+
+//CFBundleDisplayName = "Money Hero"
+
+"CFBundleDisplayName" = "中年騎士 金豐植";
+"CFBundleName" = "中年騎士 金豐植";
+
+"NSUserTrackingUsageDescription" = "该标识符用于向您投放个性化广告。";
